@@ -18,6 +18,8 @@ jobs:
 
       - name: install toolchain
         uses: carlosperate/arm-none-eabi-gcc-action@v1
+        with:
+          release: '8-2018-q4'
 
       - name: build
         run: make
